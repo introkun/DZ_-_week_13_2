@@ -46,7 +46,8 @@ void outArray(int* arr, int size)
 }
 void deleteArray(int* arr)
 {
-	delete arr;
+	// Проверяйте указатели на nullptr
+	delete[] arr;
 }
 void copyArray(int* arr1, int* arr2, int size)
 {
